@@ -1,0 +1,43 @@
+
+import java.util.*;
+public class functions {
+
+
+  //  public static int calculateSum(int a, int b)
+  //  {
+  //      int sum = a+b;
+  //      return sum;
+
+   // }
+
+   public static void  checkPrime(int n)
+   {
+       int flag=0;
+       for(int i=2; i<=(n/2); i++ )
+       {
+           if(n%i==0){
+               flag=1;
+               System.out.println("not a prime no ="+ n);
+               break;
+           }
+       }
+
+         if(flag==0){
+             System.out.println("prime no ="+ n);
+         }
+       
+    } 
+    public static void main(String args[]) {
+         Scanner sc = new Scanner(System.in) ;
+            int n = sc.nextInt();
+   
+            checkPrime(n);
+            return;
+
+    }
+
+        
+        
+
+    
+}
